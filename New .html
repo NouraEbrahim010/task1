@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taking App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <center>
+        <div class="container" >
+            <h1>Note Taking Site</h1>
+            <div id="auth-section">
+                <h2>Authentication</h2>
+                    <form id="auth-form">
+                        <input type="text" id="username" placeholder="Username" required  style= "margin-bottom: 10px" >
+                        <br>
+                        <input type="password" id="password" placeholder="Password" required style= "margin-bottom: 10px">
+                        <br>
+                        <button type="submit" id="login-btn">Login</button>
+                    </form>
+        </div>
+    </center>
+        <div id="note-section" style="display: none;">
+            <h1>Note Taking App</h1>
+            <textarea id="note-input" placeholder="Enter your note here..."></textarea>
+            <button onclick="saveNote()">Save Note</button>
+            <ul id="note-list"></ul>
+            <button id="logout-btn">Logout</button>
+        </div>
+    </div>
+    <script src="New.js"></script>
+</body>
+</html>
