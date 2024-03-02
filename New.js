@@ -29,7 +29,7 @@ function setCookie(name,value,datTolive){
 
     document.getElementById("login-btn").style.display = "block";
 
-    document.getElementById("username").textContent = inpname;
+    document.getElementById("note-input").textContent = note;
 
     document.getElementById("auth-form").style.display = "none";
   } else {
@@ -52,7 +52,7 @@ function setCookie(name,value,datTolive){
     if (loggedInAdmin) {
       document.getElementById("logout-btn").style.display = "block";
   
-      document.getElementById("username").textContent = loggedInAdmin;
+     document.getElementById("note-input").textContent = loggedInAdmin;
   
       document.getElementById("auth-form").style.display = "none";
     }
